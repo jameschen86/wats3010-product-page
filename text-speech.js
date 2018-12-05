@@ -1,4 +1,4 @@
-onload = function() {
+onload = function () {
     if ('speechSynthesis' in window) with(speechSynthesis) {
 
         var playEle = document.querySelector('#play');
@@ -15,7 +15,7 @@ onload = function() {
                 flag = true;
                 utterance = new SpeechSynthesisUtterance(document.querySelector('article').textContent);
                 utterance.voice = getVoices()[0];
-                utterance.onend = function() {
+                utterance.onend = function () {
                     flag = false;
                     playEle.className = pauseEle.className = '';
                     stopEle.className = 'stopped';
