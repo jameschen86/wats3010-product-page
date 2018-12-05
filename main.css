@@ -12,15 +12,138 @@ body {
     font-size: 1.2rem;
     letter-spacing: -.05rem;
     word-spacing: .05rem;
-    padding-right: 5%;
-    padding-left: 5%;
 }
-
-
-#navbar {
-        background-color: #F8F8F8;
-        border-color: #E7E7E7;
 
 h1 {
     text-align: center
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Zoom pictures*/
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    width: 250px;
+    height: 250px;
+}
+
+.zoom:hover {
+    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Parallaxs */
+
+.parallax-1 { 
+    background-image: url("images/map.jpg");
+    height: 25rem; 
+    background-attachment: fixed; scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    "img-responsive"
+}
+
+.parallax-2 { 
+    background-image: url("images/letter.jpg");
+    height: 25rem; 
+    background-attachment: fixed; scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* text to speech */
+
+article {
+    width: 50%;
+    margin: auto;
+    line-height: 2;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 48px;
+    outline: none;
+    padding: 0;
+    width: 48px;
+}
+
+#play {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+}
+
+#play.played {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+}
+
+#pause {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+}
+
+#pause.paused {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+}
+
+#stop {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+}
+
+#stop.stopped {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14pt;
+    }
+    article {
+        width: 90%;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+
+/*  demo decor */
+
+#-demo-title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 36px;
+    background-color: #D5FFD1;
+    color: #0F316C;
+    line-height: 36px;
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+}
+
+#-demo-profile {
+    float: left;
+    height: 100%;
+    opacity: .4;
+}
+
+#-demo-profile:hover {
+    opacity: 1;
+}
+
+@media (max-width: 400px) {
+    #-demo-title {
+        font-size: 12pt;
+    }
 }
