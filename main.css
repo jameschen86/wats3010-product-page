@@ -5,7 +5,7 @@
 /* General customization */
 body {
     padding-top: 4rem;
-    background-image: url("/images/background-beige.jpg");
+    background-image: url("/images/bg.jpg");
     background-size: 100% 100%;
     color: rgba(31, 15, 0, .95, );
     font-family: Verdana, Geneva, sans-serif;
@@ -47,13 +47,12 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    "img-responsive"
 }
 
 .parallax-2 {
     background-image: url("images/letter.jpg");
     height: 25rem;
-    background-attachment: fixed scroll;
+    background-attachment: fixed; scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
