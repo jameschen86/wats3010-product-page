@@ -4,14 +4,23 @@
 
 /* General customization */
 body {
-    padding-top: 5rem;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-top: 4rem;
     background-image: url("/images/background-beige.jpg");
     background-size: 100% 100%;
-    color: rgba(31, 15, 0, .95,);
+    color: rgba(31, 15, 0, .95, );
     font-family: Verdana, Geneva, sans-serif;
-font-size: 1.2rem;
-letter-spacing: -.05rem;
-word-spacing: .05rem;
+    font-size: 1.2rem;
+    letter-spacing: -.05rem;
+    word-spacing: .05rem;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
+#navbar {
+        background-color: #F8F8F8;
+        border-color: #E7E7E7;
+
+h1 {
+    text-align: center
 }
